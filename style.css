@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'Letrista Script';
+    src: url('./fonts/Letrista-Font/LetristaScript.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/Proxime-Nova/proximanova_regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/Proxime-Nova/proximanova_light.otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./fonts/Proxime-Nova/proximanova_bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+body{
+    font-family: "Proxima Nova";
+}  
+
+.container{}
+
+/* center */
+
+.center{
+    padding:30px 330px 0;
+}
+
+/* center header */
+
+.center .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.search{
+    width: 100%;
+    max-width: 660px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgba(215,216,217,0.7);
+
+    padding: 0 20px 0 30px;
+    display: flex;
+    align-items: center;
+}
+
+.search__icon{
+    background: none;
+    border: none;
+}
+
+.search__input{
+    max-width: 660px;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+
+    font-size: 16px;
+    line-height: 40px;
+    color: #b3b3b3;
+    font-weight: 300;
+    font-family: "Proxima Nova";
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile__photo{
+    height: 60px;
+    min-width: 60px;
+    border-radius:50%;
+    background-color: #657282;
+}
+
+.profile__img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+    vertical-align: middle;
+}
+
+.profile__name{
+    font-size: 16px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: bold;
+}
+
+/* banner */
+
+.banner{
+   position: relative;
+}
+
+.banner__img{
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    max-height: 360px;
+}
+
+.banner__text{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 100;
+}
+
+.banner__subtitle{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+}
+
+.banner__title{
+    font-size: 34px;
+    letter-spacing: 3px;
+    line-height: 44px;
+    color: #ffffff;
+    font-family: "Letrista Script";
+}
+
+/* albums */
+
+.albums{
+    padding: 30px 0 0;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, minmax(auto, 300px));
+    gap: 30px;
+}
+
+.albums__item{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.albums__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* left */
+
+.left, .rigth{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    background-color: #eaeaea;
+}
+
+.left{
+    left: 0;
+    top: 0;
+}
+
+/* logo */
+
+.logo{
+    padding: 32px;
+    background-color: #ea2e49;
+}
+
+.logo__img{
+    transform: translate(50%, 0);
+}
+
+/* nav */
+
+.nav{
+    padding: 45px 30px 0;
+}
+
+.nav__container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+.nav__item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav__text{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* rigth */
+
+.rigth{
+    top: 0;
+    right: 0;
+}
+
+/* rigth header */
+
+.rigth .header{
+    padding: 40px 30px;
+    background-color: #77c4d3;
+}
+
+.header__title{
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header__title::before{
+    content: url('./img/icon/playlist.svg');
+    vertical-align: sub;
+	margin-right: 15px;
+}
+
+/* playlist */
+
+.playlist{
+    padding: 30px 30px 0;
+}
+
+.playlist__container{
+    display: flex;
+    flex-direction: column;
+    max-height: 570px;
+    overflow: auto;
+}
+
+.playlist__container::-webkit-scrollbar {
+    width: 0;
+}
+
+.playlist__item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.playlist__cover{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.playlist__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.playlist__text{
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist__title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #1e2029;
+}
+
+.playlist__author{
+    font-size: 14px;
+    line-height: 24px;
+    color: #b3b3b3;
+}
+
+/* download */
+
+.download{
+    padding: 55px;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    background-color: #e1e1e1;
+
+    filter: drop-shadow(0 0 30px rgba(231,231,231,0.9));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.download__title{
+    font-size: 32px;
+    line-height: 32px;
+    color: #1b1d25;
+    text-align: center;
+
+    margin-bottom: 12px;
+}
+
+.download__title > span{
+    color: #77c4d3;
+    font-size: 36px;
+    font-family: "Letrista Script";
+}
+
+.download__btn{
+    font-size: 18px;
+    line-height: 24px;
+    color: #ea2e49;
+    border-radius: 15px;
+    border: 1px solid #ea2e49;
+    padding: 10px 30px;
+}
