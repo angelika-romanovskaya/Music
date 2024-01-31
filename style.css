@@ -40,7 +40,7 @@ body{
 /* center */
 
 .center{
-    padding:30px 330px 0;
+    padding:30px 330px 180px;
 }
 
 /* center header */
@@ -270,7 +270,7 @@ body{
 .playlist__container{
     display: flex;
     flex-direction: column;
-    max-height: 60vh;
+    max-height: 53vh;
     overflow: auto;
 }
 
@@ -319,7 +319,7 @@ body{
 /* download */
 
 .download{
-    padding: 55px;
+    padding: 55px 55px 185px;
    
     background-color: #e1e1e1;
 
@@ -327,7 +327,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .download__title{
@@ -353,3 +352,139 @@ body{
     border: 1px solid #ea2e49;
     padding: 10px 30px;
 }
+
+/* player */
+
+.player{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    background-color: #1b1d25;
+
+    display: flex;
+    gap: 45px;
+    align-items: center;
+}
+
+.track{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.track__cover{
+    min-width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1b1d25;
+}
+
+.track__img{
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.track__text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 45px;
+}
+
+.track__title{
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.track__author{
+    font-size: 14px;
+    line-height: 20px;
+    color: #b3b3b3;
+    font-weight: 300;
+}
+
+.play-icons{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.timeline{
+    display: flex;
+    align-items: center;
+}
+
+.value{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.timeline__progress{
+    margin: 0 10px;
+    width: 930px;
+    height: 10px;
+    border-radius: 6px;
+}
+
+.timeline__progress::-webkit-progress-bar {
+    width: 930px;
+    border-radius: 6px;
+    height: 10px;
+    background-color: #333745;
+}
+
+.timeline__progress::-webkit-progress-value {
+    border-radius: 6px;
+    height: 10px;
+    background-color: #ea2e49;
+}
+
+.timeline__progress::-moz-progress-bar {
+    width: 930px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: #333745;
+}
+
+.audio{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.audio__progress{
+    width: 155px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #333745;
+}
+
+.audio__progress::-webkit-progress-bar {
+    width: 155px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #333745;
+}
+
+.audio__progress::-webkit-progress-value {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #77c4d3;
+}
+
+.audio__progress::-moz-progress-bar {
+    width: 155px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #333745;
+}
+
