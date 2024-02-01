@@ -1,16 +1,30 @@
 @import url(./style.css);
 
-@media (max-width: 1800px) {
+@media (max-width: 1800px), (max-height: 780px) {
     .nav{
         gap: 20px;
+        padding: 30px 0 0;
     }
 
     .playlist__item{
         padding: 20px 0;
     }
+
+    .nav__item{
+        gap: 10px;
+        padding: 5px 30px;
+    }
+
+    .download{
+        display: none;
+    }
+
+    .albums__hover{
+        padding: 10px;
+    }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1450px) {
 
     .center{
         padding:30px 330px 100px;
@@ -26,8 +40,29 @@
     }
 
     .albums{
+        gap: 20px;
         grid-template-columns: repeat(3, minmax(auto, 300px));
     }
+
+    .albums__number{
+        display: none;
+    }
+
+    .albums__title{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .albums__author{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .albums__play{
+        width: 40px;
+        height: 40px;
+    }
+    
 
     .logo{
         padding: 20px;
