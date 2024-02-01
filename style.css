@@ -214,7 +214,7 @@ body{
     padding: 45px 0 0;
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 80px;
 }
 
 .nav__container{
@@ -245,8 +245,6 @@ body{
 .rigth{
     top: 0;
     right: 0;
-    display: grid;
-    grid-template-rows: max-content auto max-content;
 }
 
 /* rigth header */
@@ -274,14 +272,11 @@ body{
 /* playlist */
 
 .playlist{
-    padding: 30px 30px 0;
-}
-
-.playlist__container{
+    padding: 30px 30px 0; 
     display: flex;
     flex-direction: column;
-    max-height: 53vh;
-    overflow: auto;
+    height: inherit;
+    overflow-y: auto;  
 }
 
 .playlist__container::-webkit-scrollbar {
@@ -331,9 +326,9 @@ body{
 
 .download{
     padding: 55px 55px 185px;
-   
+    position: absolute;
     background-color: #e1e1e1;
-
+    bottom: 0;
     filter: drop-shadow(0 0 30px rgba(231,231,231,0.9));
     display: flex;
     flex-direction: column;
@@ -386,6 +381,7 @@ body{
     gap: 25px;
     align-items: center;
     cursor: pointer;
+    grid-area: track;
 }
 
 .track__cover{
@@ -431,6 +427,14 @@ body{
     gap: 25px;
 }
 
+#play{
+    grid-area: play;
+}
+
+#repeat{
+    grid-area: repeat;
+}
+
 .play-icons__item{
     cursor: pointer;
 }
@@ -438,6 +442,7 @@ body{
 .timeline{
     display: flex;
     align-items: center;
+    grid-area: timeline;
 }
 
 .value{
