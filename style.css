@@ -379,7 +379,7 @@ body{
     padding: 30px 30px 0; 
     display: flex;
     flex-direction: column;
-    max-height: 53%;
+    max-height: calc(100% - 125px - 140px - 225px);
     overflow-y: auto;  
 }
 
