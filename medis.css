@@ -1,0 +1,273 @@
+@import url(./style.css);
+
+@media (max-width: 1440px) {
+
+    .center{
+        padding:30px 330px 100px;
+    }
+
+    .profile__name{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .banner__img{
+        max-height: 260px;
+    }
+
+    .albums{
+        grid-template-columns: repeat(3, minmax(auto, 300px));
+    }
+
+    .logo{
+        padding: 20px;
+    }
+
+    .nav{
+        gap: 50px;
+    }
+
+    .nav__container{
+        gap: 15px;
+    }
+
+    .rigth .header{
+        padding: 25px 30px;
+    }
+
+    .playlist__item{
+        padding: 20px 0;
+    }
+
+    .download{
+        padding: 25px 55px 145px;
+    }
+
+    .player{
+        padding: 10px;
+    }
+
+    .track{
+        gap: 15px;
+    }
+
+    .track__cover{
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .play-icons{
+        gap: 10px;
+    }
+
+    .timeline__progress{
+        width: 30vw;
+    }
+
+    .timeline__progress::-webkit-progress-bar {
+        width: 30vw;
+    }
+    
+    .timeline__progress::-moz-progress-bar {
+        width: 30vw;
+    }
+
+    .audio{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .center{
+        padding:30px 250px 100px;
+    }
+
+    .banner__img{
+        max-height: 200px;
+    }
+
+    .albums{
+        grid-template-columns: repeat(3, minmax(auto, 200px));
+    }
+
+    .left, .rigth{
+        width: 220px;
+    }
+
+    .nav{
+        padding: 30px 0 0;
+    }
+
+    .nav__item{
+        padding: 0 15px;
+    }
+
+    .nav__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .rigth .header{
+        padding: 25px 20px;
+    }
+
+    .playlist{
+        padding: 20px 10px 0;
+    }
+
+    .playlist__item{
+        padding: 10px 0;
+    }
+
+    .download{
+        padding: 25px 35px 125px;
+    }
+
+    .download__title{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    
+    .download__title > span{
+        font-size: 28px;
+    }
+    
+    .download__btn{
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .search{
+        padding: 0 10px;
+    }
+    
+    .search__input{
+        height: 40px;
+        
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .profile__photo{
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .profile__name {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .banner__text {
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .albums{
+        grid-template-columns: repeat(2, minmax(auto, 150px));
+    }
+
+    .track__cover {
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .track__title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .track__author {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .play-icons__item, .audio__icon {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media (max-width: 768px) {
+
+    .center{
+        padding:30px 30px 100px;
+    }
+
+    .banner, .left, .rigth{
+        display: none;
+     }
+
+     .albums {
+        grid-template-columns: repeat(4, minmax(auto, 300px));
+    }
+
+    .track__text{
+        max-width: 50px;
+    }
+
+    .track__title, .track__author{
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .play-icons__item, .audio__icon {
+        width: 15px;
+        height: 15px
+    }
+
+    .value {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .timeline__progress{
+        width: 20vw;
+        height: 5px;
+    }
+
+    .timeline__progress::-webkit-progress-bar {
+        width: 20vw;
+        height: 5px;
+    }
+    
+    .timeline__progress::-moz-progress-bar {
+        width: 20vw;
+        height: 5px;
+    }
+
+    .audio__progress{
+        width: 10vw;
+        height: 5px;
+    }
+    
+    .audio__progress::-webkit-progress-bar {
+        width: 10vw;
+        height: 5px;
+    }
+    
+    .audio__progress::-moz-progress-bar {
+        width: 10vw;
+        height: 5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .albums {
+        grid-template-columns: repeat(2, minmax(auto, 150px));
+    }
+
+}
+
+
+

@@ -31,11 +31,13 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none; }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Proxima Nova";
 }  
-
-.container{}
 
 /* center */
 
@@ -68,6 +70,7 @@ body{
 .search__icon{
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 .search__input{
@@ -84,12 +87,14 @@ body{
     color: #b3b3b3;
     font-weight: 300;
     font-family: "Proxima Nova";
+    cursor: pointer;
 }
 
 .profile{
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .profile__photo{
@@ -108,7 +113,7 @@ body{
 
 .profile__name{
     font-size: 16px;
-    line-height: 40px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #b3b3b3;
     font-weight: bold;
@@ -118,6 +123,7 @@ body{
 
 .banner{
    position: relative;
+   padding-bottom: 30px;
 }
 
 .banner__img{
@@ -143,6 +149,7 @@ body{
     color: #ffffff;
     font-weight: bold;
     font-family: "Proxima Nova";
+    white-space: nowrap;
 }
 
 .banner__title{
@@ -151,12 +158,12 @@ body{
     line-height: 44px;
     color: #ffffff;
     font-family: "Letrista Script";
+    white-space: nowrap;
 }
 
 /* albums */
 
 .albums{
-    padding: 30px 0 0;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, minmax(auto, 300px));
@@ -166,6 +173,7 @@ body{
 .albums__item{
     max-width: 300px;
     max-height: 300px;
+    cursor: pointer;
 }
 
 .albums__img{
@@ -203,7 +211,7 @@ body{
 /* nav */
 
 .nav{
-    padding: 45px 30px 0;
+    padding: 45px 0 0;
     display: flex;
     flex-direction: column;
     gap: 90px;
@@ -219,6 +227,8 @@ body{
     display: flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
+    padding: 0 30px;
 }
 
 .nav__text{
@@ -235,15 +245,15 @@ body{
 .rigth{
     top: 0;
     right: 0;
+    display: grid;
+    grid-template-rows: max-content auto max-content;
 }
 
 /* rigth header */
 
 .rigth .header{
     padding: 40px 30px;
-    background-color: #77c4d3;
-    display: grid;
-    grid-template-rows: max-content auto max-content;
+    background-color: #77c4d3; 
 }
 
 .header__title{
@@ -283,6 +293,7 @@ body{
     align-items: center;
     gap: 10px;
     padding: 30px 0;
+    cursor: pointer;
 }
 
 .playlist__cover{
@@ -351,6 +362,7 @@ body{
     border-radius: 15px;
     border: 1px solid #ea2e49;
     padding: 10px 30px;
+    cursor: pointer;
 }
 
 /* player */
@@ -364,14 +376,16 @@ body{
     background-color: #1b1d25;
 
     display: flex;
-    gap: 45px;
+    gap: 10px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .track{
     display: flex;
     gap: 25px;
     align-items: center;
+    cursor: pointer;
 }
 
 .track__cover{
@@ -382,8 +396,8 @@ body{
 }
 
 .track__img{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
@@ -392,7 +406,6 @@ body{
 .track__text{
     display: flex;
     flex-direction: column;
-    margin-right: 45px;
 }
 
 .track__title{
@@ -401,6 +414,7 @@ body{
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 .track__author{
@@ -408,12 +422,17 @@ body{
     line-height: 20px;
     color: #b3b3b3;
     font-weight: 300;
+    white-space: nowrap;
 }
 
 .play-icons{
     display: flex;
     align-items: center;
     gap: 25px;
+}
+
+.play-icons__item{
+    cursor: pointer;
 }
 
 .timeline{
@@ -430,29 +449,33 @@ body{
 
 .timeline__progress{
     margin: 0 10px;
-    width: 930px;
+    width: 40vw;
     height: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .timeline__progress::-webkit-progress-bar {
-    width: 930px;
+    width: 40vw;
     border-radius: 6px;
     height: 10px;
     background-color: #333745;
+    cursor: pointer;
 }
 
 .timeline__progress::-webkit-progress-value {
     border-radius: 6px;
     height: 10px;
     background-color: #ea2e49;
+    cursor: pointer;
 }
 
 .timeline__progress::-moz-progress-bar {
-    width: 930px;
+    width: 40vw;
     height: 10px;
     border-radius: 6px;
     background-color: #333745;
+    cursor: pointer;
 }
 
 .audio{
@@ -461,30 +484,37 @@ body{
     gap: 25px;
 }
 
+.audio__icon{
+    cursor: pointer;
+}
+
 .audio__progress{
-    width: 155px;
+    width: 10vw;
     height: 10px;
     border-radius: 5px;
     background-color: #333745;
+    cursor: pointer;
 }
 
 .audio__progress::-webkit-progress-bar {
-    width: 155px;
+    width: 10vw;
     height: 10px;
     border-radius: 5px;
     background-color: #333745;
+    cursor: pointer;
 }
 
 .audio__progress::-webkit-progress-value {
     height: 10px;
     border-radius: 5px;
     background-color: #77c4d3;
+    cursor: pointer;
 }
 
 .audio__progress::-moz-progress-bar {
-    width: 155px;
+    width: 10vw;
     height: 10px;
     border-radius: 5px;
     background-color: #333745;
+    cursor: pointer;
 }
-
