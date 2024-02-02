@@ -322,12 +322,47 @@ body{
 }
 
 .nav__item{
-    display: flex;
-    align-items: center;
-    gap: 15px;
     cursor: pointer;
-    padding: 15px 30px;
+    padding: 15px 30px 15px 75px;
     border-left: 3px solid transparent;
+}
+
+.nav__icon{
+    background-repeat: no-repeat;
+    background-position: 30px center;
+    background-size: 30px 30px;
+}
+
+.nav__container:first-child > .nav__item:nth-child(1){
+    background-image: url('./img/icon/top-songs.svg');
+}
+
+.nav__container:first-child > .nav__item:nth-child(2){
+    background-image: url('./img/icon/most-heard.svg');
+}
+
+.nav__container:first-child > .nav__item:nth-child(3){
+    background-image: url('./img/icon/song-of-the-day.svg');
+}
+
+.nav__container:first-child > .nav__item:nth-child(4){
+    background-image: url('./img/icon/surprise-me.svg');
+}
+
+.nav__container:nth-child(2) > .nav__item:nth-child(1){
+    background-image: url('./img/icon/artist.svg');
+}
+
+.nav__container:nth-child(2) > .nav__item:nth-child(2){
+    background-image: url('./img/icon/artist.svg');
+}
+
+.nav__container:last-child > .nav__item:nth-child(1){
+    background-image: url('./img/icon/radio.svg');
+}
+
+.nav__container:last-child > .nav__item:nth-child(2){
+    background-image: url('./img/icon/friends.svg');
 }
 
 .nav__item:hover{
