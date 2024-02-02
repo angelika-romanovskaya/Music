@@ -1,6 +1,6 @@
 @import url(./style.css);
 
-@media (max-width: 1800px), (max-height: 780px) {
+@media (max-width: 1800px), (max-height: 980px) {
     .nav{
         gap: 20px;
         padding: 30px 0 0;
@@ -15,20 +15,12 @@
         padding: 5px 30px;
     }
 
-    .download{
-        display: none;
-    }
-
-    .playlist{
-        max-height: calc(100% - 125px - 140px);
-    }
-
     .albums__hover{
         padding: 10px;
     }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1450px), (max-height: 780px)  {
 
     .center{
         padding:30px 330px 100px;
@@ -74,6 +66,10 @@
 
     .logo{
         padding: 20px;
+    }
+
+    .download{
+        display: none;
     }
 
     .rigth .header{
