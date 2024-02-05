@@ -654,6 +654,7 @@ body{
 }
 
 .volume__icon{
+    position : relative;
     cursor: pointer;
 }
 

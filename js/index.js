@@ -75,7 +75,7 @@ function updateTimeline(e){
     timelineProgress.value = currentTime
     let min = Math.trunc(audio.currentTime/60);
     let sec = Math.floor(audio.currentTime - (Math.trunc(audio.currentTime/60) * 60))
-    currentValue.innerHTML = `${min}:${sec >= 9 ? sec : '0' + sec}`
+    currentValue.innerHTML = `${min}:${sec > 9 ? sec : '0' + sec}`
 }
 
 function setTimeline(e){
@@ -85,7 +85,7 @@ function setTimeline(e){
     audio.currentTime = (click/width) * duration
     let min = Math.trunc(audio.currentTime/60);
     let sec = Math.floor(audio.currentTime - (Math.trunc(audio.currentTime/60) * 60))
-    currentValue.innerHTML = `${min}:${sec >= 9 ? sec : '0' + sec}`
+    currentValue.innerHTML = `${min}:${sec > 9 ? sec : '0' + sec}`
 }
 
 function repeatSong(){
@@ -118,7 +118,6 @@ function volumePlay(){
 
 function updateVolume(e){
     const {volume} = e.srcElement;
-    console.log(e)
     volumeProgress.setAttribute('max', '1')
     volumeProgress.value = volume
 }
@@ -138,7 +137,7 @@ loadSong(songs[songIndex])
 audio.addEventListener('canplaythrough', ()=>{
     let min = Math.trunc(audio.currentTime/60);
     let sec = Math.floor(audio.currentTime - (Math.trunc(audio.currentTime/60) * 60))
-    currentValue.innerHTML = `${min}:${sec >= 9 ? sec : '0' + sec}`
+    currentValue.innerHTML = `${min}:${sec > 9 ? sec : '0' + sec}`
     maxValue.innerHTML = `${Math.trunc(audio.duration/60)}:${Math.floor(audio.duration - (Math.trunc(audio.duration/60) * 60))}`;
 })
 
