@@ -273,6 +273,10 @@
         width: 20vw;
         height: 5px;
     }
+
+    .timeline__progress::-webkit-progress-value {
+        height: 5px;
+    }
     
     .timeline__progress::-moz-progress-bar {
         width: 20vw;
