@@ -14,6 +14,7 @@ const author = document.querySelector('#author');
 const currentValue = document.querySelector('#currentValue');
 const maxValue = document.querySelector('#maxValue')
 const track__img = document.querySelector('.track__img')
+const albums__item = document.querySelectorAll('.albums__item');
 
 const songs = ["А лето цвета неба", "Двигаться", "Царица"];
 const songsAuthor = ["Юрий Шатунов", "Raim", "Анна Асти"];
@@ -133,6 +134,8 @@ function setVolume(e){
 }
 
 loadSong(songs[songIndex]) 
+
+albums__item.forEach(element=> element.addEventListener('click', playSong))
 
 audio.addEventListener('canplaythrough', ()=>{
     let min = Math.trunc(audio.currentTime/60);

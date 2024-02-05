@@ -1,0 +1,23 @@
+[
+    {
+        "id": "12w32",
+        "title": "А лето цвета неба",
+        "author": "Юрий Шатунов",
+        "img": "./audio/img/А лето цвета неба.jpg",
+        "audio": "./audio/А лето цвета неба.mp3"
+    },
+    {
+        "id": "34u76",
+        "title": "Двигаться",
+        "author": "Raim",
+        "img": "./audio/img/Двигаться.jpg",
+        "audio": "./audio/Двигаться.mp3"
+    },
+    {
+        "id": "98t46",
+        "title": "Царица",
+        "author": "Анна Асти",
+        "img": "./audio/img/Царица.jpg",
+        "audio": "./audio/Царица.mp3"
+    }
+]
