@@ -1,0 +1,355 @@
+@import url(./style.css);
+
+@media (max-width: 1800px), (max-height: 980px) {
+    .nav{
+        gap: 20px;
+        padding: 30px 0 0;
+    }
+
+    .playlist__item{
+        padding: 20px 0;
+    }
+
+    .nav__item{
+        gap: 10px;
+        padding: 5px 30px 5px 75px;
+    }
+
+    .albums__hover{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1450px), (max-height: 780px)  {
+
+    .center{
+        padding:30px 330px 100px;
+    }
+
+    .profile__name{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .banner__img{
+        max-height: 260px;
+    }
+
+    .albums{
+        gap: 20px;
+        grid-template-columns: repeat(3, minmax(auto, 300px));
+    }
+
+    .albums__number{
+        display: none;
+    }
+
+    .albums__title{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .playlist{
+        max-height: calc(100% - 100px - 80px);
+    }
+
+    .albums__author{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .albums__play{
+        width: 40px;
+        height: 40px;
+    }
+    
+
+    .logo{
+        padding: 20px;
+    }
+
+    .download{
+        display: none;
+    }
+
+    .rigth .header{
+        padding: 25px 30px;
+    }
+
+    .player{
+        padding: 10px;
+    }
+
+    .track{
+        gap: 15px;
+    }
+
+    .track__cover{
+        min-width: 60px;
+        height: 60px;
+    }
+
+    .play-icons{
+        gap: 10px;
+    }
+
+    .nav{
+        padding: 30px 0 0;
+        gap: 30px;
+    }
+
+    .download{
+       display: none;
+    }
+
+    .timeline__progress{
+        width: 30vw;
+    }
+
+    .timeline__progress::-webkit-progress-bar {
+        width: 30vw;
+    }
+    
+    .timeline__progress::-moz-progress-bar {
+        width: 30vw;
+    }
+
+    .volume{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .center{
+        padding:30px 250px 100px;
+    }
+
+    .banner__img{
+        max-height: 200px;
+    }
+
+    .albums{
+        grid-template-columns: repeat(3, minmax(auto, 200px));
+    }
+
+    .left, .rigth{
+        width: 220px;
+    }
+
+    .nav{
+        padding: 20px 0 0;
+    }
+
+    .nav__item{
+        padding: 10px 15px 10px 60px;
+    }
+
+    .nav__icon{
+        background-position: 15px center;
+    }
+
+    .nav__text{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .rigth .header{
+        padding: 25px 20px;
+    }
+
+    .playlist{
+        padding: 20px 10px 0;
+    }
+
+    .playlist__item{
+        padding: 10px 0;
+    }
+
+    .track__text{
+        max-width: 90px;
+    }
+
+    .track__title, .track__author{
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .search{
+        padding: 0 10px;
+    }
+    
+    .search__input{
+        height: 40px;
+        
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .profile__photo{
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .profile__name {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .playlist{
+        max-height: calc(100% - 95px - 60px);
+    }
+
+    .banner__text {
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .albums{
+        grid-template-columns: repeat(2, minmax(auto, 150px));
+    }
+
+    .track__cover {
+        min-width: 40px;
+        height: 40px;
+    }
+
+    .track__title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .track__author {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .play-icons__item, .volume__icon {
+        width: 20px;
+        height: 20px
+    }
+}
+
+@media (max-width: 768px), (max-width: 1024px) and (max-height: 768px) and (orientation: landscape) {
+
+    .center{
+        padding:30px 30px 100px;
+    }
+
+    .banner, .left, .rigth{
+        display: none;
+     }
+
+     .albums {
+        grid-template-columns: repeat(4, minmax(auto, 300px));
+    }
+
+    .track__text{
+        max-width: 50px;
+    }
+
+    .play-icons__item, .volume__icon {
+        width: 15px;
+        height: 15px
+    }
+
+    .value {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .timeline__progress{
+        width: 20vw;
+        height: 5px;
+    }
+
+    .timeline__progress::-webkit-progress-bar {
+        width: 20vw;
+        height: 5px;
+    }
+    
+    .timeline__progress::-moz-progress-bar {
+        width: 20vw;
+        height: 5px;
+    }
+
+    .volume__progress{
+        width: 10vw;
+        height: 5px;
+    }
+    
+    .volume__progress::-webkit-progress-bar {
+        width: 10vw;
+        height: 5px;
+    }
+    
+    .volume__progress::-moz-progress-bar {
+        width: 10vw;
+        height: 5px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .center{
+        padding-bottom: 180px;
+    }
+
+    .albums {
+        grid-template-columns: repeat(2, minmax(auto, 150px));
+    }
+
+    .track{
+        justify-content: center;
+    }
+
+    #play_icon{
+        justify-content: center;
+    }
+
+    .play-icons__item{
+        width: 25px;
+        height: 25px;
+    }
+
+    .player{
+        display: grid;
+        grid-template-areas: 'track track'
+                            'play play'
+                            'timeline repeat';
+        justify-content: center;
+        grid-gap: 20px;
+    }
+
+    .volume{
+        display: none;
+    }
+
+    .track__text {
+        max-width: fit-content;
+    }
+
+    .timeline__progress{
+        width: 40vw;
+    }
+
+    .timeline__progress::-webkit-progress-bar {
+        width: 40vw;
+    }
+    
+    .timeline__progress::-moz-progress-bar {
+        width: 40vw;
+    }
+}
+
+
+
+
+
