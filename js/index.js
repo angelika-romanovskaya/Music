@@ -15,7 +15,7 @@ const currentValue = document.querySelector('#currentValue');
 const maxValue = document.querySelector('#maxValue')
 const track__img = document.querySelector('.track__img')
 
-const songs = ["А лето цвета небо", "Двигаться", "Царица"];
+const songs = ["А лето цвета неба", "Двигаться", "Царица"];
 const songsAuthor = ["Юрий Шатунов", "Raim", "Анна Асти"];
 
 let songIndex = 0
