@@ -1,7 +1,7 @@
 const albums = document.querySelector('.albums');
 
 function renderAlbums(){
-    fetch("../data/data.json").then(response => response.json()).then(data => {
+    fetch("/data/data.json").then(response => response.json()).then(data => {
         albums.innerHTML='';
         data.forEach(element => {
             albums.innerHTML+=`<div class="albums__item" id="${element.id}">
