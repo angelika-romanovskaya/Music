@@ -1,9 +1,9 @@
 const albums = document.querySelector('.albums');
 
-function renderAlbums(){
-    fetch("/data/data.json").then(response => response.json()).then(data => {
+async function renderAlbums(){
+    await fetch("http://localhost:9090/data").then(response => response.json()).then(data => {
         albums.innerHTML='';
-        data.forEach(element => {
+        data.data.forEach(element => {
             albums.innerHTML+=`<div class="albums__item" id="${element.id}">
                                     <img class="albums__img" src="${element.img}" alt="Song">
                                     <div class="albums__hover">

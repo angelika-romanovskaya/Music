@@ -15,6 +15,7 @@ const currentValue = document.querySelector('#currentValue');
 const maxValue = document.querySelector('#maxValue');
 const track__img = document.querySelector('.track__img');
 
+
 let songIndex = 0;
 let currentVolume = 0;
 
@@ -90,20 +91,12 @@ function setTimeline(e){
 
 function repeatSong(){
     const isRepeat = repeatBtn.classList.contains('active');
-    if(isRepeat){
-        repeatBtn.classList.remove('active');
-    } else{
-        repeatBtn.classList.add('active');
-    }
+    isRepeat ? repeatBtn.classList.remove('active') :  repeatBtn.classList.add('active');
 }
 
 function shuffleSong(){
     const isShuffle = shuffleBtn.classList.contains('active');
-    if(isShuffle){
-        shuffleBtn.classList.remove('active');
-    } else{
-        shuffleBtn.classList.add('active');
-    }
+    isShuffle ? shuffleBtn.classList.remove('active') :  shuffleBtn.classList.add('active');
 }
 
 function volumeNull(){
