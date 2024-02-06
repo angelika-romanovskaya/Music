@@ -1,7 +1,9 @@
 const albums = document.querySelector('.albums');
 
 async function renderAlbums(){
-    await fetch("http://localhost:9090/data").then(response => response.json()).then(data => {
+    await fetch("http://localhost:9090/data")
+    .then(response => response.json())
+    .then(data => {
         albums.innerHTML='';
         data.data.forEach(element => {
             albums.innerHTML+=`<div class="albums__item" id="${element.id}">
@@ -24,7 +26,8 @@ async function renderAlbums(){
                                     </div>
                                 </div>`
         });
-    });
+    })
+    .catch(error => console.log(error));
 }
 
 renderAlbums();
