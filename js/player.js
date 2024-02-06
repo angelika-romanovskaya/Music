@@ -14,7 +14,6 @@ const author = document.querySelector('#author');
 const currentValue = document.querySelector('#currentValue');
 const maxValue = document.querySelector('#maxValue');
 const track__img = document.querySelector('.track__img');
-const albums__item = document.querySelectorAll('.albums__item');
 
 let songIndex = 0;
 let currentVolume = 0;
@@ -48,6 +47,7 @@ function pauseSong(){
 
 function nextSong(){
     songIndex++;
+    const albums__item = albums.querySelectorAll('.albums__item');
     if(songIndex > albums__item.length - 1){
         songIndex = 0;
     }
@@ -59,6 +59,7 @@ function nextSong(){
 
 function prevSong(){
     songIndex--;
+    const albums__item = albums.querySelectorAll('.albums__item');
     if(songIndex < 0){
         songIndex =  albums__item.length - 1;
     }
@@ -133,6 +134,7 @@ function setVolume(e){
 
 function playAlbumsSong(e){
     const item = e.target.closest('.albums__item');
+    const albums__item = albums.querySelectorAll('.albums__item');
     title.innerHTML = item.querySelector('.albums__title').innerHTML;
     author.innerHTML = item.querySelector('.albums__author').innerHTML;
     track__img.src = item.querySelector('.albums__img').src;
@@ -153,6 +155,7 @@ function playAlbumsSong(e){
 function audioEnded(){
     const isRepeat = repeatBtn.classList.contains('active');
     const isShuffle = shuffleBtn.classList.contains('active');
+    const albums__item = albums.querySelectorAll('.albums__item');
     if(isRepeat){
         const title = albums__item[songIndex].querySelector('.albums__title').innerHTML;
         const author = albums__item[songIndex].querySelector('.albums__author').innerHTML;
